@@ -13,8 +13,8 @@
 
 <div class="featured-texts">
   <h2>Odabrani tekstovi</h2>
-  <app-featured-text
-    *ngFor="let post of posts"
-    [post]="post"
-  ></app-featured-text>
+  <div class="slider">
+    <app-featured-text *ngFor="let post of posts" [post]="post">
+    </app-featured-text>
+  </div>
 </div>

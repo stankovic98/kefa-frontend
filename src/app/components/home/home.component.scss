@@ -24,12 +24,20 @@
 
 .featured-texts {
   width: 100vw;
-  height: 90vh;
+  height: 75vh;
   background-color: black;
 
   h2 {
     color: white;
     padding-left: 15%;
     padding-top: 5%;
+  }
+  .slider {
+    display: flex;
+    overflow: scroll;
+
+    app-featured-text {
+      margin: 5vw;
+    }
   }
 }
