@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { GospelComponent } from './components/gospel/gospel.component';
 import { HomeService } from './services/home.service';
-import { JurisdictionSelectComponent } from './components/jurisdiction-select/jurisdiction-select.component';
+import { JurisdictionLevelComponent } from './components/jurisdiction-level/jurisdiction-level.component';
 
 
 @NgModule({
@@ -15,7 +15,7 @@ import { JurisdictionSelectComponent } from './components/jurisdiction-select/ju
     AppComponent,
     HomeComponent,
     GospelComponent,
-    JurisdictionSelectComponent
+    JurisdictionLevelComponent
   ],
   imports: [
     BrowserModule,

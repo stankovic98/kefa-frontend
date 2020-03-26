@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { JurisdictionSelectComponent } from './jurisdiction-select.component';
+import { JurisdictionLevelComponent } from './jurisdiction-level.component';
 
-describe('JurisdictionSelectComponent', () => {
-  let component: JurisdictionSelectComponent;
-  let fixture: ComponentFixture<JurisdictionSelectComponent>;
+describe('JurisdictionLevelComponent', () => {
+  let component: JurisdictionLevelComponent;
+  let fixture: ComponentFixture<JurisdictionLevelComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ JurisdictionSelectComponent ]
+      declarations: [ JurisdictionLevelComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(JurisdictionSelectComponent);
+    fixture = TestBed.createComponent(JurisdictionLevelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
