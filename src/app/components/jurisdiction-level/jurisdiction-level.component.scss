@@ -1,37 +1,63 @@
 .container {
+  background-color: black;
+  width: 70vw;
   margin: 10% auto;
-  width: 80%;
-  background-color: white;
-  display: grid;
-  grid-gap: 0;
-  grid-template-columns: 2fr 3fr;
-}
+  height: 80vh;
+  position: relative;
 
-.side-image {
-  background-image: url("/assets/pope-francis.jpg");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: 75%;
-}
-.text {
-  margin: 0% 0% 8% 8%;
+  .text {
+    color: white;
+    position: absolute;
+    top: 5.5vh;
+    left: 6.5vw;
+  }
+
   .bottom {
-    margin-top: 50%
+    bottom: 6.5vh;
+    left: 6.5vw;
+    position: absolute;
+
+    a {
+      opacity: 0;
+      position: absolute;
+      top: -6vh;
+      width: 12vw;
+      background-color: white;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      padding: 10px;
+      transition: opacity 1s;
+    }
+
+    img {
+      opacity: 1;
+      position: absolute;
+      top: -10vh;
+      width: 12vw;
+      transition: opacity 1s;
+    }
   }
-  button {
-    visibility: hidden;
-  }
-  img {
+
+  .side-image {
+    // background-image: url("/assets/st-gregory.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 .container:hover {
-  .text {
-    button {
-      visibility: visible;
+  .bottom {
+    a {
+      opacity: 1;
     }
     img {
-      visibility: hidden;
+      opacity: 0;
     }
   }
 }

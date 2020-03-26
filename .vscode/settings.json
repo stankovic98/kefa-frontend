@@ -1,0 +1,23 @@
+{
+  "workbench.colorTheme": "Solarized Dark",
+  "prettier.jsxSingleQuote": true,
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnType": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 4,
+  "typescript.format.enable": false,
+  "typescript.format.insertSpaceAfterCommaDelimiter": false,
+  "typescript.format.insertSpaceAfterKeywordsInControlFlowStatements": false,
+  "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "typescript.format.insertSpaceAfterSemicolonInForStatements": false,
+  "typescript.format.insertSpaceBeforeAndAfterBinaryOperators": false,
+  "prettier.jsxBracketSameLine": true,
+  "prettier.printWidth": 120,
+  "editor.minimap.maxColumn": 130,
+  "editor.formatOnPaste": true
+}

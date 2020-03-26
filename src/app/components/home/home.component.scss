@@ -9,7 +9,7 @@
   margin-bottom: 20%;
   h1 {
     font-family: serif;
-    font-family: 'Playfair Display SC';
+    font-family: "Playfair Display SC";
     font-size: 65px;
     line-height: 107px;
     width: 710px;
@@ -19,5 +19,17 @@
     font-style: normal;
     font-size: 30px;
     line-height: 40px;
+  }
+}
+
+.featured-texts {
+  width: 100vw;
+  height: 90vh;
+  background-color: black;
+
+  h2 {
+    color: white;
+    padding-left: 15%;
+    padding-top: 5%;
   }
 }
