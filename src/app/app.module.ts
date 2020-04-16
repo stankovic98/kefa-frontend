@@ -11,6 +11,10 @@ import { JurisdictionLevelComponent } from "./components/jurisdiction-level/juri
 import { FeaturedTextComponent } from "./components/featured-text/featured-text.component";
 import { LatinQuoteComponent } from "./components/latin-quote/latin-quote.component";
 import { FooterComponent } from "./components/footer/footer.component";
+import { ParishComponent } from "./pages/parish/parish.component";
+import { BannerComponent } from "./components/banner/banner.component";
+import { MarkdownModule } from "ngx-markdown";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -20,10 +24,17 @@ import { FooterComponent } from "./components/footer/footer.component";
     JurisdictionLevelComponent,
     FeaturedTextComponent,
     LatinQuoteComponent,
-    FooterComponent
+    FooterComponent,
+    ParishComponent,
+    BannerComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    MarkdownModule.forRoot({ loader: HttpClient }),
+  ],
   providers: [HomeService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

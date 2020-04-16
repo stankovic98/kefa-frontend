@@ -1,14 +1,11 @@
 <div class="container">
   <div class="text">
     <h1>{{ title }}</h1>
-    <p>{{ subtitle }}</p>
-  </div>
-  <div class="bottom">
+    <p>Razmatrajte poticaje vašeg pastira.</p>
     <img class="logo" src="/assets/logo-text-white.png" />
-    <a href="{{ url }}">Vidi Više</a>
   </div>
   <div
     class="side-image"
-    [ngStyle]="{ 'background-image': 'url(' + imageUrl + ')' }"
+    [ngStyle]="{ 'background-image': 'url(' + backgroundImage + ')' }"
   ></div>
 </div>

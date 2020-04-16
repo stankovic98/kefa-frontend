@@ -32,6 +32,7 @@ export class JurisdictionLevelComponent implements OnInit {
         this.title = "Župnik";
         this.subtitle = "Božji Sluga";
         this.imageUrl = "/assets/Saint_Paul_of_the_Cross.jpg";
+        this.url = "parish";
         break;
     }
   }
