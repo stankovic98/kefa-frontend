@@ -16,7 +16,12 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": ["styles.scss"],
-      "scripts": ["../node_modules/marked/lib/marked.js"],
+      "scripts": [
+        "../node_modules/marked/lib/marked.js",
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/uikit/dist/js/uikit.min.js",
+        "../node_modules/uikit/dist/js/uikit-icons.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
