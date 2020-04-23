@@ -1,6 +1,22 @@
-.container {
-  width: 40vw;
-  height: 40vh;
-  background-color: white;
-  padding: 5%;
+.featured-texts {
+  width: 100vw;
+  height: 75vh;
+  background-color: black;
+
+  h2 {
+    color: white;
+    padding-left: 15%;
+    padding-top: 5%;
+  }
+  .slider {
+    display: flex;
+    overflow: scroll;
+  }
+  .container {
+    margin: 5vw;
+    width: 40vw;
+    height: 40vh;
+    background-color: white;
+    padding: 5%;
+  }
 }
