@@ -1,3 +1,7 @@
-## Župa Marije Magdalene
+# Župa Marije Magdalene
+
+Na mjestu današnje crkve Svetog Jeronima bila je izgrađena Crkva i prije 15. stoljeća, no ona je spaljena u pohodu Turaka na Beč. Ta prva Crkva je bila vjerojatno drvene građe. Zatim su grofovi Celjski podigli Crkvu za koju se smatra da je stradala u potresu 1738. godine. Današnja Crkva je građena od 1738. do 1749. godine.Usporedno sa crkvom građen je i Pavlinski samostan. 1761. godine dograđeni su zvonici, a devet godina prije toga 1752. godine bio je dograđen i pjevački dio (kor). Crkva je poznata po svoja dva zvonika što je specifično jer se dva zvonika obično grade na katedralama. Tlocrt crkve je gotovo identičan glasovitoj bazilici sv. Petra u Rimu. Najveća vrijednost crkve je u tome što je tijekom 18. st. poznati freskoslikar Ivan Ranger oslikao dio svetišta.
+
+## O svetom Jeronimu
 
 Na mjestu današnje crkve Svetog Jeronima bila je izgrađena Crkva i prije 15. stoljeća, no ona je spaljena u pohodu Turaka na Beč. Ta prva Crkva je bila vjerojatno drvene građe. Zatim su grofovi Celjski podigli Crkvu za koju se smatra da je stradala u potresu 1738. godine. Današnja Crkva je građena od 1738. do 1749. godine.Usporedno sa crkvom građen je i Pavlinski samostan. 1761. godine dograđeni su zvonici, a devet godina prije toga 1752. godine bio je dograđen i pjevački dio (kor). Crkva je poznata po svoja dva zvonika što je specifično jer se dva zvonika obično grade na katedralama. Tlocrt crkve je gotovo identičan glasovitoj bazilici sv. Petra u Rimu. Najveća vrijednost crkve je u tome što je tijekom 18. st. poznati freskoslikar Ivan Ranger oslikao dio svetišta.

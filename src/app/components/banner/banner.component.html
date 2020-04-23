@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <div class="text">
     <h1>{{ title }}</h1>
     <p>Razmatrajte poticaje vašeg pastira.</p>
@@ -8,4 +8,12 @@
     class="side-image"
     [ngStyle]="{ 'background-image': 'url(' + backgroundImage + ')' }"
   ></div>
+</div> -->
+
+<div class="uk-cover-container">
+  <div class="uk-overlay uk-overlay-default uk-position-center">
+    <h1>{{ title }}</h1>
+    <h2>Razmatrajte poticaje vašeg pastira.</h2>
+  </div>
+  <img src="{{ backgroundImage }}" alt="background photo" uk-cover />
 </div>
