@@ -26,7 +26,6 @@
 }
 .uk-subnav-pill > * > :first-child {
   padding: 0.5rem 1rem;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 .top-container {
   z-index: 2;
@@ -38,17 +37,4 @@
   font-size: 1.2em;
   opacity: 0.7;
   font-weight: 300;
-}
-.logos-grid img {
-  display: block;
-  width: 60px;
-  margin: 0 auto;
-  filter: grayscale(100%);
-  transition: filter 0.25s;
-}
-.logos-grid img:hover {
-  display: block;
-  width: 60px;
-  margin: 0 auto;
-  filter: grayscale(0);
 }
