@@ -124,13 +124,14 @@
             </p>
             <div class="uk-grid uk-child-width-1-2@s" data-uk-grid>
               <div>
-                <a href="#content" data-uk-scroll="duration: 500" title="Learn More"
-                  class="uk-button uk-button-primary uk-border-pill" data-uk-scrollspy-class="uk-animation-fade">Saznaj
-                  Više</a>
+                <a routerLink="{{ this.dioceseID }}" data-uk-scroll="duration: 500" title="Learn More"
+                  class="uk-button uk-button-primary uk-border-pill" data-uk-scrollspy-class="uk-animation-fade">
+                  Starnica Biskupije
+                </a>
               </div>
               <div>
-                <a href="http://www.biskupija-varazdinska.hr/">
-                  Službena stranica vaše biskupije
+                <a uk-toggle="target: #parish-setter">
+                  Postavi biskupiju
                 </a>
               </div>
             </div>
@@ -160,13 +161,34 @@
             </p>
             <div class="uk-grid uk-child-width-1-2@s" data-uk-grid>
               <div>
-                <a href="#content" data-uk-scroll="duration: 500" title="Learn More"
-                  class="uk-button uk-button-primary uk-border-pill" data-uk-scrollspy-class="uk-animation-fade">Saznaj
-                  Više</a>
+                <a routerLink="{{ this.dioceseID }}/{{ this.parishID }}" data-uk-scroll=" duration: 500"
+                  title="Learn More" class="uk-button uk-button-primary uk-border-pill"
+                  data-uk-scrollspy-class="uk-animation-fade">
+                  Stranica Župe
+                </a>
               </div>
               <div>
-                <a routerLink="/parish">Služben stranica župe.</a>
+                <a (click)="changeParish()" uk-toggle="target: #parish-setter">Postavi župu</a>
               </div>
+            </div>
+          </div>
+        </div>
+        <!-- This is the modal -->
+        <div id="parish-setter" uk-modal>
+          <div class="uk-modal-dialog uk-modal-body">
+            <h2 class="uk-modal-title">odaberite biskupiju</h2>
+            <ul>
+              <li *ngFor="let d of dioceses">
+                <a (click)="getParishes(d.uid)">{{ d.name }}</a>
+              </li>
+            </ul>
+            <div *ngIf="dioceseID">
+              <h2 class="uk-modal-title">Odaberite župu</h2>
+              <ul>
+                <li *ngFor="let p of parishes">
+                  <a (click)="setParish(p.uid)" uk-toggle="target: #parish-setter">{{ p.name }}</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
