@@ -9,7 +9,7 @@ import { HomeService } from "./services/home.service";
 import { ParishComponent } from "./pages/parish/parish.component";
 import { MarkdownModule } from "ngx-markdown";
 import { HttpClient, HttpClientModule } from "@angular/common/http";
-import { DioceseComponent } from './diocese/diocese.component';
+import { DioceseComponent } from './pages/diocese/diocese.component';
 
 @NgModule({
   declarations: [
