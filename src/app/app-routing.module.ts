@@ -12,7 +12,7 @@ const routes: Routes = [
   {
     path: ":dioceseID",
     component: DioceseComponent
-  }
+  },
   {
     path: ":dioceseID/:parishID",
     component: ParishComponent

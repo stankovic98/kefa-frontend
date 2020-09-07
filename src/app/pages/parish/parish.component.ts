@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: "app-parish",
@@ -7,17 +8,18 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ["./parish.component.scss"],
 })
 export class ParishComponent implements OnInit {
-  posts: any = [
-    { title: "Audijencija srijedom", author: "Papa Franjo" },
-    {
-      title: "Najbolji način pripreme za ovaj Uskrs",
-      author: "Biskup Bože Radoš",
-    },
-    { title: "Audijencija srijedom", author: "Papa Franjo" },
-    { title: "Audijencija srijedom", author: "Papa Franjo" },
-    { title: "Audijencija srijedom", author: "Papa Franjo" },
-  ];
-  constructor() {}
 
-  ngOnInit() {}
+  apiEndpoint = "http://localhost:4200/api"
+  parishData: any
+
+  constructor(private router: Router, private http: HttpClient) {}
+
+  ngOnInit() {
+    this.apiEndpoint += this.router.url
+    console.log(this.router.url)
+    this.http.get(this.apiEndpoint).toPromise().then(data => {
+      this.parishData = data
+      console.log(this.parishData)
+    })
+  }
 }
