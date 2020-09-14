@@ -1,0 +1,16 @@
+<div class="uk-container uk-container-center uk-width-2-3">
+  <h3 class="uk-margin-top">Napiši novi članak</h3>
+  <ul class="uk-tab" data-uk-tab="{connect:'#my-id'}">
+    <li><a href="">Općenito</a></li>
+    <li><a href="">Novi članak</a></li>
+  </ul>
+  <ul id="my-id" class="uk-switcher uk-margin">
+    <li>
+      <div class="uk-container">
+        <textarea class="uk-textarea" [(ngModel)]="info"></textarea>
+        <button class="uk-button uk-button-default uk-margin" (click)="saveInfo()">Spremi promjene</button>
+      </div>
+    </li>
+    <li>Content 2</li>
+  </ul>
+</div>

@@ -3,6 +3,9 @@ import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./pages/home/home.component";
 import { ParishComponent } from "./pages/parish/parish.component";
 import {DioceseComponent} from './pages/diocese/diocese.component';
+import {LoginComponent} from './pages/login/login.component';
+import {AdminComponent} from './pages/admin/admin.component';
+import {AuthGuard} from './services/auth/helpers/auth.guard';
 
 const routes: Routes = [
   {
@@ -10,8 +13,17 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: "login",
+    component: LoginComponent
+  },
+  {
+    path: "admin",
+    component: AdminComponent,
+    canActivate: [AuthGuard]
+  },
+  {
     path: ":dioceseID",
-    component: DioceseComponent
+    component: ParishComponent
   },
   {
     path: ":dioceseID/:parishID",

@@ -1,9 +1,10 @@
 import { Injectable, OnInit } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
+import {Common} from '../common';
 
 @Injectable()
 export class HomeService {
-  domainUrl = "http://localhost:4200/api"
+  domainUrl = Common.apiUrl
 
   constructor(private http: HttpClient) {}
 
