@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {AdminService} from '../../services/admin/admin.service';
+import {AdminService, Article} from '../../services/admin/admin.service';
+import {AuthService} from '../../services/auth/auth.service';
 declare var UIkit: any;
 
 @Component({
@@ -10,8 +11,9 @@ declare var UIkit: any;
 export class AdminComponent implements OnInit {
 
   info: any
+  article = new Article()
 
-  constructor(private admin: AdminService) { }
+  constructor(private admin: AdminService, private auth: AuthService) { }
 
   ngOnInit() {
     this.admin.getInfo().then(data => {
@@ -21,12 +23,32 @@ export class AdminComponent implements OnInit {
 
   saveInfo() {
     this.admin.saveInfo(this.info).then(succes => {
-      UIkit.notification({
+      console.log(succes)
+    }, err => {
+      console.log(err)
+    })
+     UIkit.notification({
           message: 'Uspješno spremljena promjena!',
           status: 'primary',
           pos: 'top-center',
-          timeout: 5000
+          timeout: 1000
+      });
+  }
+
+  newArticle() {
+    console.log(this.article)
+    this.admin.newArticle(this.article).then(success => {
+      console.log(success)
+      UIkit.notification({
+          message: 'Uspješno objavljen novi clanak!',
+          status: 'primary',
+          pos: 'top-center',
+          timeout: 1000
       });
     })
+  }
+
+  logout() {
+    this.auth.logout()
   }
 }

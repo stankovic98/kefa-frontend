@@ -12,8 +12,16 @@ export class AdminService {
   }
 
   saveInfo(info: any) {
-    return this.http.post(`${Common.apiUrl}/admin/edit-info`, {info}).toPromise().then(data => {
-      console.log(data)
-    })
+    return this.http.post(`${Common.apiUrl}/admin/edit-info`, {info}).toPromise()
   }
+
+  newArticle(article: Article) {
+    return this.http.post(`${Common.apiUrl}/admin/new-article`, article).toPromise()
+
+  }
+}
+
+export class Article {
+  title: string
+  content: string
 }

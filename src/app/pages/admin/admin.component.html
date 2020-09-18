@@ -1,16 +1,29 @@
+<nav class="uk-navbar-container" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav">
+      <li (click)="logout()"><a href="" class="uk-align-right" uk-icon="icon: logout">Odjava</a></li>
+    </ul>
+  </div>
+</nav>
 <div class="uk-container uk-container-center uk-width-2-3">
   <h3 class="uk-margin-top">Napiši novi članak</h3>
   <ul class="uk-tab" data-uk-tab="{connect:'#my-id'}">
-    <li><a href="">Općenito</a></li>
+    <li *ngIf="info"><a href="">Općenito</a></li>
     <li><a href="">Novi članak</a></li>
   </ul>
   <ul id="my-id" class="uk-switcher uk-margin">
-    <li>
+    <li *ngIf="info">
       <div class="uk-container">
         <textarea class="uk-textarea" [(ngModel)]="info"></textarea>
         <button class="uk-button uk-button-default uk-margin" (click)="saveInfo()">Spremi promjene</button>
       </div>
     </li>
-    <li>Content 2</li>
+    <li>
+      <div class="uk-container">
+        <input class="uk-input uk-margin" [(ngModel)]="article.title">
+        <textarea class="uk-textarea" [(ngModel)]="article.content"></textarea>
+        <button class="uk-button uk-button-default uk-margin" (click)="newArticle()">Objavi</button>
+      </div>
+    </li>
   </ul>
 </div>
